@@ -1,0 +1,16 @@
+CREATE DATABASE senaiFood;
+
+CREATE TABLE cliente(
+	codigo serial PRIMARY KEY,
+	nome VARCHAR ( 50 ) NOT NULL,
+	endereco VARCHAR ( 50 ) NOT NULL,
+);
+
+insert into cliente 
+values (1, 'joao', 'ituiutaba');
+
+insert into cliente 
+values (2, 'maria', 'ituiutaba');
+
+insert into cliente 
+values (3, 'tiao', 'uberlandia');
