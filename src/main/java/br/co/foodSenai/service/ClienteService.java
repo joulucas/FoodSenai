@@ -10,4 +10,6 @@ public interface ClienteService {
 	  Optional<Cliente> findById(Long codigo);
 	  
 	  List<Cliente> findAll();
+	  
+	  Cliente save(Cliente cliente);
 }

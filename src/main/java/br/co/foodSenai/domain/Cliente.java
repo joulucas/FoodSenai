@@ -84,5 +84,4 @@ public class Cliente implements Serializable{
 	@Column(name = "endereco")
 	private String endereco;
 	
-
 }

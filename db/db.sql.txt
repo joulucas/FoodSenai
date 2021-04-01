@@ -1,7 +1,7 @@
 CREATE DATABASE senaiFood;
 
 CREATE TABLE cliente(
-	codigo serial PRIMARY KEY,
+	codigo  int PRIMARY key  GENERATED ALWAYS AS identity,
 	nome VARCHAR ( 50 ) NOT NULL,
 	endereco VARCHAR ( 50 ) NOT NULL,
 );
