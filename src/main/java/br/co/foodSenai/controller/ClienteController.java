@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,16 +25,15 @@ public class ClienteController {
 	public Optional<Cliente> getCliente(@PathVariable Long codigo) {
 		return service.findById(codigo);
 	}
-	
-	@GetMapping
-	public List<Cliente> findAll(){
-	   return service.findAll();
-	}
-	
-	  @PostMapping("/salvar")
-	  public Cliente newEmployee(@RequestBody Cliente cliente) {
-	    return service.save(cliente);
-	  }
 
- 
+	@GetMapping
+	public List<Cliente> findAll() {
+		return service.findAll();
+	}
+
+	@PostMapping("/salvar")
+	public Cliente salvar(@RequestBody Cliente cliente) {
+		return service.save(cliente);
+	}
+
 }
