@@ -12,3 +12,14 @@ Após isso pode executar o projeto, fazendo um teste de get na url:
 
  http://localhost:8080/cliente/ > para o findAll  e
  http://localhost:8080/cliente/1 > para o get pelo codigo;
+
+Para o teste do Post usar a url:
+
+ http://localhost:8080/cliente/salvar
+
+ com o json abaixo:
+ {
+  "codigo": null,
+  "nome": "joub",
+  "endereco": "abc"
+}
